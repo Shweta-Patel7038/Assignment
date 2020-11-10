@@ -1,0 +1,21 @@
+<div class="panel panel-default" > 
+    <div class="panel-body" >
+       
+        <form name="form" id="form">
+            <nav class="navbar navbar-expand">
+                <div class="navbar-nav">
+                    <a>Welcome {{currentuser}}</a>
+                </div>
+                <div class="navbar-nav">
+                    <a class="nav-item logout fa fa-power-off" (click)="logout()">Logout</a>
+                </div>
+            </nav>
+            <div class="form-group">
+                <ng2-smart-table [settings]="settings" [source]="products"
+                ></ng2-smart-table>    
+            </div>
+
+        </form>     
+
+    </div>                     
+</div>  
